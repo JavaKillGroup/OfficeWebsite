@@ -1,0 +1,58 @@
+/* 
+* @Author: anchen
+* @Date:   2017-08-09 15:26:13
+* @Last Modified by:   anchen
+* @Last Modified time: 2017-08-09 15:40:04
+*/
+/*html{
+     font-size: 100%!important;
+     
+}
+  body {
+        max-width: 100%;
+    }*/
+@media only screen and (min-width: 481px) {
+    html {
+        font-size: 10px!important;
+    }
+      body {
+        max-width: 481px;
+    }
+}
+
+@media only screen and (min-width: 561px) {
+    html {
+        font-size: 12px!important;
+    }
+      body {
+        max-width: 510px;
+    }
+}
+
+@media only screen and (min-width: 641px) {
+    html {
+        font-size: 15%!important;
+    }
+
+    body {
+        max-width: 640px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    html {
+        font-size: 17px!important;
+    }
+
+    body {
+        max-width: 1200px;
+    }
+}
+@media only screen and (min-width: 1920px) {
+    html {
+        font-size: 20px!important;
+    }
+
+    body {
+        max-width: 1920px;
+    }
+}

@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>homepage</title>
+    <!--   <link rel="stylesheet" type="text/css" href="css/change_size.css"> -->
     <style type="text/css" media="screen">
     * {
         margin: 0;
@@ -18,7 +19,7 @@
         width: 100%;
         height: 5rem;
         display: block;
-        position: absolute;
+        position: fixed;
         z-index: 99;
         opacity: 0.7;
         /* background-color: ; */
@@ -197,88 +198,91 @@
 
     #industry_function {
         width: 100%;
-        height: 25rem;
-        overflow: hidden;
-    }
-
-    #industry_tit {
-        height: 10%;
-        position: relative;
-        background: #F7F7F7;
-    }
-
-    #industry_function ul {
-        width: 100%;
-        position: absolute;
-    }
-
-    #industry_function ul li {
-        float: left;
-        vertical-align: middle;
+        height: 40rem;
         text-align: center;
+    }
+    /*---industry_function_wrap start----*/
+
+    .industry_function_wrap {
+        width: 100%;
         height: 100%;
-        width: 20%;
-        background: #F7F7F7;
+        background: url('img/instruction.jpg') no-repeat center;
+    }
+    /*---industry_function_wrap end----*/
+    /*----industry_function_context start----*/
+
+    .industry_function_context {
+        position: relative;
+        margin: 0 auto;
+        width: 80%;
+        height: 100%;
+    }
+
+    .industry_function_context ul {
+        list-style: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .industry_function_context li {
+        margin-right: 0.0625rem;
+        position: relative;
+        float: left;
+        display: block;
+        width: 19.9%;
+        height: 100%;
+    }
+
+    .industry_slide_cover {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 0%;
+    }
+
+    .industry_function_context li:hover .industry_slide_cover {
+        height: 100%;
+        transition-duration: 0.5s;
+    }
+
+
+    .industry_show {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        height: 70%;
+        text-align: center;
+        position: relative;
+        top: 28%;
+        color: #DBD5D5;
+    }
+
+    .industry_png {
+        background-repeat: no-repeat;
+        background-size: 50% 90%;
+        background-position: center;
+        display: inline-block;
+        width: 100%;
+        height: 30%;
         overflow: hidden;
     }
 
-    .tab li a:link,
-    .tab li a:visited {
-        text-decoration: none;
-        color: #000;
-    }
-
-    .tab li a:hover {
-        color: #F90;
-        border-bottom: 0.125rem solid #FC2424;
-    }
-
-    .tab li.select {
-        background: #FFF;
-        padding: 0;
-        font-weight: bolder;
-    }
-
-
-    #industry_display {
+    .industry_show h2 {
+        margin-top: 0.125rem;
+        height: 2rem;
         width: 100%;
-        height: 22.5rem;
+        display: inline-block;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 44px;
     }
 
-    .mod {
-        width: 100%;
-        height: 100%;
+    .industry_show div {
+        font-size: 13px;
+        line-height: 26px;
     }
-
-    #industry_display div:nth-of-type(1) {
-        background-image: url('img/11.jpg');
-        background-size:contain;
-        background-origin: content-box;
-    }
-    #industry_display div:nth-of-type(2) {
-        background-image: url('img/1.jpg');
-        background-size:120rem 26rem;
-        background-repeat: no-repeat;
-        background-origin: content-box;
-    }
-    #industry_display div:nth-of-type(3) {
-        background-image: url('img/2.jpg');
-        background-size:120rem 26rem;
-        background-repeat: no-repeat;
-        background-origin: content-box;
-    }
-    #industry_display div:nth-of-type(4) {
-        background-image: url('img/4.jpg');
-        background-size:120rem 26rem;
-        background-repeat: no-repeat;
-        background-origin: content-box;
-    }
-    #industry_display div:nth-of-type(5) {
-        background-image: url('img/3.jpg');
-        background-size:120rem 26rem;
-        background-repeat: no-repeat;
-        background-origin: content-box;
-    }
+    /*----industry_function_context end----*/
     /*---industry-end---*/
     /*---context end---*/
     /*--footer start--*/
@@ -294,7 +298,7 @@
 
     #footer div>span {
         color: #F4F5F6;
-        display：inline-block;
+        display: inline-block;
     }
     /*--foorter end--*/
     </style>
@@ -403,34 +407,84 @@
                 <span index="4"></span>
                 <span index="5"></span>
             </div>
-            <a href="javascript:;" id="prev" class="arrow">&lt;</a>
-            <a href="javascript:;" id="next" class="arrow">&gt;</a>
+            <a href="javascript:void(0);" id="prev" class="arrow">&lt;</a>
+            <a href="javascript:void(0);" id="next" class="arrow">&gt;</a>
         </div>
         <div id="industry_function">
-            <div id="industry_tit">
-                <ul class="tab">
-                    <li><a href="javascript:void(0)" onclick="">网维管理</a></li>
-                    <li><a href="javascript:void(0)">研发管理</a></li>
-                    <li><a href="javascript:void(0)">物流管理</a></li>
-                    <li><a href="javascript:void(0)">农场管理</a></li>
-                    <li class="select"><a href="javascript:void(0)">工程管理</a></li>
-                </ul>
-            </div>
-            <div id="industry_display">
-                <div class="mod" style="display:none;">
-                    啊啊啊啊啊啊啊啊啊啊啊啊啊啊
-                </div>
-                <div class="mod" style="display:none">
-                    啵啵啵啵啵啵啵啵啵啵啵啵啵啵啵宝宝
-                </div>
-                <div class="mod" style="display:none">
-                    踩踩踩踩踩踩踩踩踩踩踩踩踩踩踩踩踩踩
-                </div>
-                <div class="mod" style="display:none">
-                    顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶
-                </div>
-                <div class="mod" style="display:none">
-                    呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃
+            <div class="industry_function_wrap">
+                <div class="industry_function_context">
+                    <ul id="industry_kind">
+                        <li>
+                            <!--每个产业-->
+                            <div class="industry_slide_cover" style="background:#BA292E;">
+                                <!--隐藏的块-->
+                            </div>
+                            <div class="industry_show" >
+                                <!--显示内容-->
+                                <div class="industry_png" style="background-image: url('img/logistice_png.png');"> </div>
+                                <h2>物流管理</h2>
+                                <div>
+                                    哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈啊哈哈哈哈哈哈
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!--每个产业-->
+                            <div class="industry_slide_cover" style="background:#5e904d;">
+                                <!--隐藏的块-->
+                            </div>
+                            <div class="industry_show">
+                                <!--显示内容-->
+                                <div class="industry_png" style="background-image: url('img/network_maintenance.png');"> </div>
+                                <h2>网维管理</h2>
+                                <div>
+                                    哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈啊哈哈哈哈哈哈
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!--每个产业-->
+                            <div class="industry_slide_cover" style="background:#5d4378">
+                                <!--隐藏的块-->
+                            </div>
+                            <div class="industry_show">
+                                <!--显示内容-->
+                                <div class="industry_png" style="background-image: url('img/industry.png');"> </div>
+                                <h2>工业管理</h2>
+                                <div>
+                                    哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈啊哈哈哈哈哈哈
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!--每个产业-->
+                            <div class="industry_slide_cover" style="background:#1599a5">
+                                <!--隐藏的块-->
+                            </div>
+                            <div class="industry_show">
+                                <!--显示内容-->
+                                <div class="industry_png" style="background-image: url('img/fitment.png');"> </div>
+                                <h2>装修管理</h2>
+                                <div>
+                                    哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈啊哈哈哈哈哈哈
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!--每个产业-->
+                            <div class="industry_slide_cover" style="background:#AB44B1">
+                                <!--隐藏的块-->
+                            </div>
+                            <div class="industry_show">
+                                <!--显示内容-->
+                                <div class="industry_png" style="background-image: url('img/computer.png');"> </div>
+                                <h2>计算机服务</h2>
+                                <div>
+                                    哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈啊哈哈哈哈哈哈
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -455,16 +509,17 @@
             /* Act on the event */
             $('.menu').show();
         }).mouseout(function() {
-            $(".menu").hide();
+            $(".menu ").hide();
         });
     });
     //---------header end-----------
 
     //----------context start-------
     /**
-     * 页面加载时运行 实现轮播效果
+     * 页面加载时运行
      */
     window.onload = function() {
+        //----------- 实现轮播效果------------
         //获取元素
         var container = document.getElementById('container');
         var list = document.getElementById('list');
@@ -591,55 +646,135 @@
         container.onmouseout = play;
 
         play();
+        //----------- 实现轮播效果 end ------------
 
 
+        //----------- 实现背景滑动效果 start ------------
 
-        //-----一下功能是实现tab标签来展示产业介绍------
-        /**
-         * 通过JavaScript来获取元素id
-         * @param  {元素} id [传入一个元素]
-         * @return {元素指针}    [返回一个元素的指针控制]
-         */
-        function $s(id) {
-            return typeof id == 'string' ? document.getElementById(id) : id;
-        }
-        //获取鼠标滑过或点击的标签和要切换内容的元素
-
-
-        var indexs = 0; //tab的标签位置
-        var timers = null; //tab定时器
-
-        var lis = $s('industry_function').getElementsByTagName('li'); //获取industry_function下的所有li元素
-        var divs = $s('industry_display').getElementsByTagName('div'); //获取industry_display下的所有div元素
-        if (lis.length != divs.length) { //判断li和div元素的个数是否对应
-            return;
-        }
-        //遍历titles下的所有li
-        for (var i = 0, j = lis.length; i < j; i++) {
-            lis[i].id = i; //为li设置id，id号为i的值
-            lis[i].onmouseover = function() {
-                //使用that这个变量来引用当前滑过的li
+        var slidego = document.getElementById('industry_kind').getElementsByTagName('li'); //获取id为industry——kind下的所有li
+        for (var i = 0, j = slidego.length; i < j; i++) { //循环遍历li，并为没有li添加一个onmouseover和onmouseout方法
+            slidego[i].onmouseover = function() {
                 var that = this;
-                //如果存在准备执行的定时器，立刻清除，只有当前停留时间大于500ms时才开始执行
-                if (timer) {
-                    clearTimeout(timers);
-                    timers = null;
-                }
-                timers = window.setTimeout(function() { //设置延迟显示
-                    for (var j = 0, h = lis.length; j < h; j++) {
-                        lis[j].className = '';
-                        divs[j].style.display = 'none';
+                $(that.firstChild).slideDown("slow");
+
+            };
+            slidego[i].onmouseout = function() {
+                var that = this;
+                $(that.firstChild).slideDown("slow");
+            };
+        };
+    }
+    //----------- 实现背景滑动效果 end ------------
+
+
+    /*
+            //-----一下功能是实现tab标签来展示产业介绍------
+            /**
+             * 通过JavaScript来获取元素id
+             * @param  {元素} id [传入一个元素]
+             * @return {元素指针}    [返回一个元素的指针控制]
+             
+            function $s(id) {
+                return typeof id == 'string' ? document.getElementById(id) : id;
+            }
+            //获取鼠标滑过或点击的标签和要切换内容的元素
+
+
+            var indexs = 0; //tab的标签位置
+            var timers = null; //tab定时器
+
+            var lis = $s('project_display').getElementsByTagName('li'); //获取industry_function下的所有li元素
+            var divs = $s('industry_display').getElementsByTagName('div'); //获取industry_display下的所有div元素
+            if (lis.length != divs.length) { //判断li和div元素的个数是否对应
+                return;
+            }
+            //遍历titles下的所有li
+            for (var i = 0, j = lis.length; i < j; i++) {
+                lis[i].id = i; //为li设置id，id号为i的值
+                lis[i].onmouseover = function() {
+                    //使用that这个变量来引用当前滑过的li
+                    var that = this;
+                    //如果存在准备执行的定时器，立刻清除，只有当前停留时间大于500ms时才开始执行
+                    if (timer) {
+                        clearTimeout(timers);
+                        timers = null;
                     }
-                    lis[that.id].className = 'select';
-                    divs[that.id].style.display = 'block';
-                }, 500);
+                    timers = window.setTimeout(function() { //设置延迟显示
+                        for (var j = 0, h = lis.length; j < h; j++) {
+                            lis[j].className = '';
+                            divs[j].style.display = 'none';
+                        }
+                        lis[that.id].className = 'select';
+                        divs[that.id].style.display = 'block';
+                    }, 500);
+                }
             }
         }
-    }
-
+    */
 
 
     //----------context end---------
+    </script>
+    <script>
+    /**
+     * 屏幕自适应
+     * @param  {数值} designWidth [屏幕设计时的大小]
+     * @param  {数值} maxWidth    [屏幕最大大小]
+     */
+    (function(designWidth, maxWidth) {
+        var doc = document,
+            win = window;
+        var docEl = doc.documentElement;
+        var tid;
+        var rootItem, rootStyle;
+
+        function refreshRem() {
+            var width = docEl.getBoundingClientRect().width;
+            if (!maxWidth) {
+                maxWidth = 540;
+            };
+            if (width > maxWidth) {
+                width = maxWidth;
+            }
+            //与淘宝做法不同，直接采用简单的rem换算方法1rem=16px
+            var rem = width * 16 / designWidth;
+            //兼容UC开始
+            rootStyle = "html{font-size:" + rem + 'px !important}';
+            rootItem = document.getElementById('rootsize') || document.createElement("style");
+            if (!document.getElementById('rootsize')) {
+                document.getElementsByTagName("head")[0].appendChild(rootItem);
+                rootItem.id = 'rootsize';
+            }
+            if (rootItem.styleSheet) {
+                rootItem.styleSheet.disabled || (rootItem.styleSheet.cssText = rootStyle)
+            } else {
+                try { rootItem.innerHTML = rootStyle } catch (f) { rootItem.innerText = rootStyle }
+            }
+            //兼容UC结束
+            docEl.style.fontSize = rem + "px";
+        };
+        refreshRem();
+
+        win.addEventListener("resize", function() {
+            clearTimeout(tid); //防止执行两次
+            tid = setTimeout(refreshRem, 300);
+        }, false);
+
+        win.addEventListener("pageshow", function(e) {
+            if (e.persisted) { // 浏览器后退的时候重新计算
+                clearTimeout(tid);
+                tid = setTimeout(refreshRem, 300);
+            }
+        }, false);
+
+        if (doc.readyState === "complete") {
+            doc.body.style.fontSize = "16px";
+        } else {
+            doc.addEventListener("DOMContentLoaded", function(e) {
+                doc.body.style.fontSize = "16px";
+            }, false);
+        }
+    })(640, 640);
     </script>
 </body>
 
