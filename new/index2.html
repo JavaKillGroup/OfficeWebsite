@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="./css/main.css">
+<link rel="stylesheet" type="text/css" href="./css/index.css">
+<link rel="stylesheet" type="text/css" href="./css/phone.css">
+</head>
+<body>
+	<div class="head fallwidth" onmouseover="stopauto()" onmouseout="autoImg()">
+		<nav id="nav" class="nav-top" >
+			<div class="nav width">
+				<ul class="	menu">
+					<li style="padding: 0 0;" >
+						<a href="#"><img style="height:2rem;" src="./imgs/logo.png"></a>
+					</li>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">产品要闻</a>
+						<div class="menu-2">
+							<ul class="list">
+								<h3>外勤管理</h3>
+								<li><a href="#">考勤协作</a></li>
+								<li><a href="#">外勤行为管理</a></li>
+							</ul>
+							<ul class="list">
+								<h3>外勤管理</h3>
+								<li><a href="#">考勤协作</a></li>
+								<li><a href="#">外勤行为管理</a></li>
+							</ul>
+							<ul class="list">
+								<h3>外勤管理</h3>
+								<li><a href="#">考勤协作</a></li>
+								<li><a href="#">外勤行为管理</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">产品注册</a></li>
+					<li><a href="#">应用案例</a>
+						<div class="menu-2">
+							<ul class="list">
+								<h3>外勤管理</h3>
+								<li><a href="#">考勤协作</a></li>
+								<li><a href="#">外勤行为管理</a></li>
+							</ul>
+							<ul class="list">
+								<h3>外勤管理</h3>
+								<li><a href="#">考勤协作</a></li>
+								<li><a href="#">外勤行为管理</a></li>
+							</ul>
+							<ul class="list">
+								<h3>外勤管理</h3>
+								<li><a href="#">考勤协作</a></li>
+								<li><a href="#">外勤行为管理</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">视频教程</a></li>
+					<li><a href="#">客服中心</a></li>
+					<li><a href="#">管理中心</a></li>
+					<li><a href="./AboutUs.html">关于我们</a></li>
+				</ul>
+				<ul class="auth">
+					<li id="login-li" onclick="window.open('http://v3.ceoease.com');">登录</li>
+					<li id="reg-li">注册</li>
+				</ul>
+			</div>
+		</nav>
+		<nav id="nav-phone" style="display: none;">
+			<div>
+				<img src="./imgs/logo.png">
+				<span>菜单
+					<div class="menu-phone">
+						<ul class="menu-phone-ul">
+					
+							<li><a href="#">首页</a></li>
+							<li><a href="#">产品要闻</a>
+								<div class="phone-menu2">
+									<ul>
+										<li><a href="#">考勤协作</a></li>
+										<li><a href="#">外勤行为管理</a></li>
+										<li><a href="#">考勤协作</a></li>
+										<li><a href="#">外勤行为管理</a></li>
+										<li><a href="#">考勤协作</a></li>
+										<li><a href="#">外勤行为管理</a></li>
+									</ul>
+								</div>
+							</li>
+							<li><a href="#">产品注册</a></li>
+							<li><a href="#">应用案例</a>
+								<div class="phone-menu2">
+									<ul>
+										<li><a href="#">考勤协作</a></li>
+										<li><a href="#">外勤行为管理</a></li>
+										<li><a href="#">考勤协作</a></li>
+										<li><a href="#">外勤行为管理</a></li>
+										<li><a href="#">考勤协作</a></li>
+										<li><a href="#">外勤行为管理</a></li>
+									</ul>
+								</div>
+							</li>
+							<li><a href="#">视频教程</a></li>
+							<li><a href="#">客服中心</a></li>
+							<li><a href="#">管理中心</a></li>
+							<li><a href="./AboutUs.html">关于我们</a></li>
+							<li><a href="#">登录</a></li>
+						</ul>
+				</div>
+				</span>
+			</div>
+		</nav>
+		
+		<div class="head-img fallwidth">
+			<img id="head-img1" src="./imgs/lbg-1.png">
+			<img id="head-img2" src="./imgs/lbg-0.png">
+			<a class="ljty" href="https://www.ceoease.com/run.php?flname=staff">立即体验</a>
+			<div class="head-i">
+				<li class="active" onclick="toImg(0)"></li>
+				<li onclick="toImg(1)"></li>
+				<li onclick="toImg(2)"></li>
+				<li onclick="toImg(3)"></li>
+				<li onclick="toImg(4)"></li>
+			</div>
+			<div id="next-img" onclick="nextImg()">></div>
+			<div id="back-img" onclick="backImg()"><</div>
+		</div>
+	</div>
+
+	<div id="bodys" class="fallwidth">
+		<div class="body-div fallwidth" style="background-color:#fff;">
+			<h4>全面高效的企业管理平台</h4>
+			<div class="gnzs width">	
+				<div class="line">
+					<div><img src="./imgs/dingwei.png"><br><span style="color: rgb(102,102,102);">考勤签注</span><br><span style="color: rgb(134,128,128);font-size: 0.7rem;">定位考勤、签注，实时照相上传</span></div>
+					<div><img src="./imgs/工资.png"><br><span style="color: rgb(102,102,102);">工资管理</span><br><span style="color: rgb(134,128,128);font-size: 0.7rem;">销售提成、考勤及绩效提成轻松实现，工资计算一键核发</span></div>
+					<div><img src="./imgs/业务.png"><br><span style="color: rgb(102,102,102);">业务管理</span><br><span style="color: rgb(134,128,128);font-size: 0.7rem;">生意机会时刻掌握，不受员工流失影响</span></div>
+					<div><img src="./imgs/进销存.png"><br><span style="color: rgb(102,102,102);">进销存管理</span><br><span style="color: rgb(134,128,128);font-size: 0.7rem;">多库房信息实时呈现、多种销售价格体系</span></div>
+				</div>
+				<div class="line">
+					<div><img src="./imgs/档案.png"><br><span style="color: rgb(102,102,102);">档案管理</span><br><span style="color: rgb(134,128,128);font-size: 0.7rem;">客户档案字段自定义设置，各类到期实时提醒</span></div>
+					<div><img src="./imgs/工单.png"><br><span style="color: rgb(102,102,102);">工单管理</span><br><span style="color: rgb(134,128,128);font-size: 0.7rem;">员工去处、做为、工作质量轻松掌握</span></div>
+					<div><img src="./imgs/订单.png"><br><span style="color: rgb(102,102,102);">订单管理</span><br><span style="color: rgb(134,128,128);font-size: 0.7rem;">客户意向初定直至达成合作，订单流程化管理</span></div>
+					<div><img src="./imgs/资金.png"><br><span style="color: rgb(102,102,102);">资金管理</span><br><span style="color: rgb(134,128,128);font-size: 0.7rem;">账户管理责权分明，数据、报表实时生成，简明易懂</span></div>
+				</div>
+			</div>
+		</div>
+		<div class="body-div fallwidth">
+			<div id="industry_function">
+            <div class="industry_function_wrap">
+                <div class="industry_function_context">
+                    <ul id="industry_kind">
+                        <li>
+                            <!--每个产业-->
+                            <div class="industry_slide_cover" style="background:#c73a3f;">
+                                <!--隐藏的块-->
+                            </div>
+                            <div class="industry_show" >
+                                <!--显示内容-->
+                                <div class="industry_png" style="background-image: url('img/logistice_png.png');"> </div>
+                                <h2>物流管理</h2>
+                                <div>
+                                    哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈啊哈哈哈哈哈哈
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!--每个产业-->
+                            <div class="industry_slide_cover" style="background:#3e9422;">
+                                <!--隐藏的块-->
+                            </div>
+                            <div class="industry_show">
+                                <!--显示内容-->
+                                <div class="industry_png" style="background-image: url('img/network_maintenance.png');"> </div>
+                                <h2>网维管理</h2>
+                                <div>
+                                    哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈啊哈哈哈哈哈哈
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!--每个产业-->
+                            <div class="industry_slide_cover" style="background:#7643ab">
+                                <!--隐藏的块-->
+                            </div>
+                            <div class="industry_show">
+                                <!--显示内容-->
+                                <div class="industry_png" style="background-image: url('img/industry.png');"> </div>
+                                <h2>工业管理</h2>
+                                <div>
+                                    哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈啊哈哈哈哈哈哈
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!--每个产业-->
+                            <div class="industry_slide_cover" style="background:#1d9da9">
+                                <!--隐藏的块-->
+                            </div>
+                            <div class="industry_show">
+                                <!--显示内容-->
+                                <div class="industry_png" style="background-image: url('img/fitment.png');"> </div>
+                                <h2>装修管理</h2>
+                                <div>
+                                    哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈啊哈哈哈哈哈哈
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!--每个产业-->
+                            <div class="industry_slide_cover" style="background:#af45b5">
+                                <!--隐藏的块-->
+                            </div>
+                            <div class="industry_show">
+                                <!--显示内容-->
+                                <div class="industry_png" style="background-image: url('img/computer.png');"> </div>
+                                <h2>计算机服务</h2>
+                                <div>
+                                    哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈啊哈哈哈哈哈哈
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+		</div>
+		<!-- <div class="body-div fallwidth" style="background-color:rgb(62, 61, 61);">
+			<h4 class="width"></h4>
+			<div class="hyzs width">
+				<div><img src="./imgs/wangwei.jpg">
+					<div>
+						<span class="default" style="left: 2.6rem;">
+							<p>网维管理</p>
+							<p style="font-size:0.8rem;">这里是描述1</p>
+							<p style="font-size:0.5rem;">这里是第二个描述</p>
+						</span>
+						<span class="hover">
+							<p>网维管理</p>
+							<p style="font-size:0.8rem;">具体的描述</p>
+							<p style="font-size:0.5rem;">进一步的介绍</p>
+							<br>
+							<a>详细信息</a>
+						</span>
+					</div>
+				</div>
+				<div><img src="./imgs/wuliu.jpg">
+					<div>
+						<span class="default" style="left: 2.6rem;">
+							<p>物流管理</p>
+							<p style="font-size:0.8rem;">这里是描述1</p>
+							<p style="font-size:0.5rem;">这里是第二个描述</p>
+						</span>
+						<span class="hover">
+							<p>物流管理</p>
+							<p style="font-size:0.8rem;">具体的描述</p>
+							<p style="font-size:0.5rem;">进一步的介绍</p>
+							<br>
+							<a>详细信息</a>
+						</span>
+					</div>
+				</div>
+				<div><img src="./imgs/it.jpg">
+					<div>
+						<span class="default" style="left: 2.6rem;">
+							<p>计算机行业</p>
+							<p style="font-size:0.8rem;">这里是描述1</p>
+							<p style="font-size:0.5rem;">这里是第二个描述</p>
+						</span>
+						<span class="hover">
+							<p>计算机行业</p>
+							<p style="font-size:0.8rem;">具体的描述</p>
+							<p style="font-size:0.5rem;">进一步的介绍</p>
+							<br>
+							<a>详细信息</a>
+						</span>
+					</div>
+				</div>
+				<div><img src="./imgs/zhizao.jpg">
+					<div>
+						<span class="default" style="left: 2.6rem;">
+							<p>制造行业</p>
+							<p style="font-size:0.8rem;">这里是描述1</p>
+							<p style="font-size:0.5rem;">这里是第二个描述</p>
+						</span>
+						<span class="hover">
+							<p>制造行业</p>
+							<p style="font-size:0.8rem;">具体的描述</p>
+							<p style="font-size:0.5rem;">进一步的介绍</p>
+							<br>
+							<a>详细信息</a>
+						</span>
+					</div>
+				</div>
+				<div><img src="./imgs/zhuangxiu.jpg">
+					<div>
+						<span class="default" style="left: 2.6rem;">
+							<p>装修公司</p>
+							<p style="font-size:0.8rem;">这里是描述1</p>
+							<p style="font-size:0.5rem;">这里是第二个描述</p>
+						</span>
+						<span class="hover">
+							<p>装修公司</p>
+							<p style="font-size:0.8rem;">具体的描述</p>
+							<p style="font-size:0.5rem;">进一步的介绍</p>
+							<br>
+							<a>详细信息</a>
+						</span>
+					</div>
+				</div>
+				<div><img src="./imgs/wangwei.jpg">
+					<div>
+						<span class="default" >
+							<p>网维管理</p>
+							<p style="font-size:0.8rem;">这里是描述1</p>
+							<p style="font-size:0.5rem;">这里是第二个描述</p>
+						</span>
+						<span class="hover">
+							<p>网维管理</p>
+							<p style="font-size:0.8rem;">具体的描述</p>
+							<p style="font-size:0.5rem;">进一步的介绍</p>
+							<br>
+							<a>详细信息</a>
+						</span>
+					</div>
+				</div>
+				<div><img src="./imgs/wuliu.jpg">
+					<div>
+						<span class="default" >
+							<p>物流管理</p>
+							<p style="font-size:0.8rem;">这里是描述1</p>
+							<p style="font-size:0.5rem;">这里是第二个描述</p>
+						</span>
+						<span class="hover">
+							<p>物流管理</p>
+							<p style="font-size:0.8rem;">具体的描述</p>
+							<p style="font-size:0.5rem;">进一步的介绍</p>
+							<br>
+							<a>详细信息</a>
+						</span>
+					</div>
+				</div>
+				<div><img src="./imgs/it.jpg">
+					<div>
+						<span class="default" >
+							<p>计算机行业</p>
+							<p style="font-size:0.8rem;">这里是描述1</p>
+							<p style="font-size:0.5rem;">这里是第二个描述</p>
+						</span>
+						<span class="hover">
+							<p>计算机行业</p>
+							<p style="font-size:0.8rem;">具体的描述</p>
+							<p style="font-size:0.5rem;">进一步的介绍</p>
+							<br>
+							<a>详细信息</a>
+						</span>
+					</div>
+				</div>
+				<div><img src="./imgs/zhizao.jpg">
+					<div>
+						<span class="default" >
+							<p>制造行业</p>
+							<p style="font-size:0.8rem;">这里是描述1</p>
+							<p style="font-size:0.5rem;">这里是第二个描述</p>
+						</span>
+						<span class="hover">
+							<p>制造行业</p>
+							<p style="font-size:0.8rem;">具体的描述</p>
+							<p style="font-size:0.5rem;">进一步的介绍</p>
+							<br>
+							<a>详细信息</a>
+						</span>
+					</div>
+				</div>
+				<div><img src="./imgs/zhuangxiu.jpg">
+					<div>
+						<span class="default" >
+							<p>装修公司</p>
+							<p style="font-size:0.8rem;">这里是描述1</p>
+							<p style="font-size:0.5rem;">这里是第二个描述</p>
+						</span>
+						<span class="hover">
+							<p>装修公司</p>
+							<p style="font-size:0.8rem;">具体的描述</p>
+							<p style="font-size:0.5rem;">进一步的介绍</p>
+							<br>
+							<a>详细信息</a>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div> -->
+													<!-- 轮播图  -->
+		<!-- <div class="body-div fallwidth">
+			<h4 class="width">无数企业的选择<br><tx>丰富的服务经验</tx></h4>
+
+			<div class="jdkh width">
+				<div class="lunbo">
+					<img src="./imgs/lbg-0.png">
+					<img src="./imgs/lbg-1.png">
+					<div class="next-img" onclick="ntImg(this)">></div>
+					<div class="back-img" onclick="bkImg(this)"><</div>
+				</div>
+			</div>
+		</div>
+		-->
+		<div class="body-div fallwidth" style="background-color: #fff;">
+			<div class="khzs width">
+				<h4>期待您的加入</h4>
+				<div>
+					<img src="./imgs/qiye1.jpg"><img src="./imgs/qiye2.jpg"><img src="./imgs/qiye3.jpg"><img src="./imgs/qiye4.jpg"><img src="./imgs/qiye5.jpg">
+					<img src="./imgs/qiye6.jpg"><img src="./imgs/qiye7.jpg"><img src="./imgs/qiye8.jpg"><img src="./imgs/qiye9.jpg"><img src="./imgs/qiye10.jpg">
+					<img src="./imgs/qiye1.jpg"><img src="./imgs/qiye2.jpg"><img src="./imgs/qiye3.jpg"><img src="./imgs/qiye4.jpg"><img src="./imgs/qiye5.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+		 <div id="bodys-phone" style="display: none;">
+			<div class="phone-div" style="background-color:rgb(62, 61, 61);">
+				<h4 class="width">部分行业</h4>
+				<div class="hyzs width">
+					<div><img src="./imgs/wangwei.jpg">
+						<div>
+							<span class="default" ">
+								<p style="font-size:2rem;">网维管理</p>
+								<p style="font-size:1.5rem;">这里是描述1</p>
+								<p style="font-size:1.5rem;">这里是第二个描述</p>
+							</span>
+							<span class="hover">
+								<p style="font-size:2rem;">网维管理</p>
+								<p style="font-size:1.5rem;">具体的描述</p>
+								<p style="font-size:1.5rem;">进一步的介绍</p>
+								<br>
+								<a>详细信息</a>
+							</span>
+						</div>
+					</div>
+					<div><img src="./imgs/wuliu.jpg">
+						<div>
+							<span class="default" ">
+								<p style="font-size:2rem;">物流管理</p>
+								<p style="font-size:1.5rem;">这里是描述1</p>
+								<p style="font-size:1.5rem;">这里是第二个描述</p>
+							</span>
+							<span class="hover">
+								<p style="font-size:2rem;">物流管理</p>
+								<p style="font-size:1.5rem;">具体的描述</p>
+								<p style="font-size:1.5rem;">进一步的介绍</p>
+								<br>
+								<a>详细信息</a>
+							</span>
+						</div>
+					</div>
+					<div><img src="./imgs/it.jpg">
+						<div>
+							<span class="default" ">
+								<p style="font-size:2rem;">计算机行业</p>
+								<p style="font-size:1.5rem;">这里是描述1</p>
+								<p style="font-size:1.5rem;">这里是第二个描述</p>
+							</span>
+							<span class="hover">
+								<p style="font-size:2rem;">计算机行业</p>
+								<p style="font-size:1.5rem;">具体的描述</p>
+								<p style="font-size:1.5rem;">进一步的介绍</p>
+								<br>
+								<a>详细信息</a>
+							</span>
+						</div>
+					</div>
+					<div><img src="./imgs/zhizao.jpg">
+						<div>
+							<span class="default" ">
+								<p style="font-size:2rem;">制造行业</p>
+								<p style="font-size:1.5rem;">这里是描述1</p>
+								<p style="font-size:1.5rem;">这里是第二个描述</p>
+							</span>
+							<span class="hover">
+								<p style="font-size:2rem;">制造行业</p>
+								<p style="font-size:1.5rem;">具体的描述</p>
+								<p style="font-size:1.5rem;">进一步的介绍</p>
+								<br>
+								<a>详细信息</a>
+							</span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		<div class="body-phone">
+			<div >
+				<p>实现业务云处理</p>
+				<font>全套功能免费试用、无时不在的专属服务</font>
+				<img src="./imgs/phone2.png">
+			</div> 
+		</div>
+		<div class="body-phone">
+			<div >
+				<p style="top:5rem;left: 23rem;">行业定制</p>
+				<font style="top: 10rem;left: 10rem;">全套功能免费试用、无时不在的专属定制服务</font>
+				<img src="./imgs/phone3.png">
+			</div>
+		</div>
+		
+		
+	</div>
+
+	<div class="foot fallwidth">
+		<div class="foot-list width">
+			<ul class="list" style="margin-left: 15rem;">
+				<h3 >外勤管理</h3>
+					<li><a href="#">考勤协作</a></li>
+					<li><a href="#">外勤行为管理</a></li>
+				</ul>
+				<ul class="list">
+					<h3>外勤管理</h3>
+					<li><a href="#">考勤协作</a></li>
+					<li><a href="#">外勤行为管理</a></li>
+				</ul>
+				<ul class="list">
+					<h3>外勤管理</h3>
+					<li><a href="#">考勤协作</a></li>
+					<li><a href="#">外勤行为管理</a></li>
+				</ul>
+				<div>
+					<span>联系我们：4000284866  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp关于我们：<img onmouseover="document.getElementById('codejpg').style.display='block';" onmouseout="document.getElementById('codejpg').style.display='none';" style="height: 30px;" src="./imgs/weixin.png"></span>
+					<img id="codejpg" style="position: absolute;	right: 15rem;display: none;" src="./imgs/code.jpg">
+				</div>
+		</div>
+	</div>
+	<div class="endbody fallwidth">
+		<div class="width">
+		<p style="margin:0 20px;font-size: 0.3rem;color: #fff;">备案许可证：蜀ICP备11016982号-3 Copyright © 2015 成都顺治网络科技公司 访问总量:  今日访问量:  </p>
+
+		</div>
+	</div>
+	<div id="foot-panl" style="display: none;">
+		<span><a href="https://www.ceoease.com/run.php?flname=staff" style="float: none;
+    width: 20rem;
+    height: 4rem;
+    margin: 0.5rem;
+    padding-top: 1rem;
+    font-size: 2rem;
+    color: #fff;
+    background-color: #ff9008;
+    border-radius: 10px;
+    box-shadow: inset 0px -1px 20px 3px rgb(255, 179, 8);
+    display: inline-block;">立即体验</a></span><a href=""><img src="./imgs/phonelogo.jpg"></a><a href=""><img src="./imgs/qq.jpg"></a>
+	</div>
+	<div class="float-right">
+		<div style="background-color: #eee;">
+		<img src="./imgs/qq.png" style="width: 100%;height: 100%;">
+			<div class="float-right-child">
+				<a href="#">QQ在线咨询</a>
+				<h2 >Tel:4000284866</h2>
+			</div>
+		</div>
+		<div >
+			<tx>产品咨询</tx>
+			<div class="float-right-child">
+				<a href="#">QQ在线咨询</a>
+				<h2 >Tel:4000284866</h2>
+			</div>
+		</div>
+		<div>
+			<tx>技术支持</tx>
+			<div class="float-right-child">
+				<a href="#">QQ在线咨询</a>
+				<h2 >Tel:4000284866</h2>
+			</div>
+		</div>
+		<div style="background-color: #869;" onclick="gotoHtml('.head');">
+			<tx>回到顶部</tx>
+			
+		</div>
+	</div>
+	<div id="login-div">
+		<div id="login">
+			<div>
+			<ul>
+				<li class="login-active">
+					<m>管理平台</m>
+					<form class="login-form" action="#1" style="display: block;">
+						<input type="text" name="qydm" placeholder="您的企业代码">
+						<input type="text" name="username" placeholder="员工姓名/已认证手机">
+						<input type="password" name="password" placeholder="您的密码">
+					</form>
+				</li>
+				<li>
+					<m>管理平台</m>
+					<form class="login-form" action="#2" >
+						<input type="text" name="username" placeholder="用户名">
+						<input type="password" name="password" placeholder="密码">
+						<input type="password" name="password" placeholder="密码">
+					</form>
+				</li>
+				<li>
+					<m>管理平台</m>
+					<form class="login-form" action="#3" >
+						<input type="text" name="username" placeholder="用户名">
+						<input type="password" name="password" placeholder="密码">
+						<input type="password" name="password" placeholder="密码">
+					</form>
+				</li>
+			</ul>
+			<button class="exit" onclick="document.getElementById('login-div').style.display='none';$('body').removeClass('hide');">X</button>
+			</div>
+			<div class="login-foot">
+				<button onclick="$('.login-active form').submit();">登录</button>
+				<p><a href="#">还没账号？免费注册</a></p>
+				<p><a href="#">找回超级用户密码</a></p>
+				<div class="login-foot-change">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+	<script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>

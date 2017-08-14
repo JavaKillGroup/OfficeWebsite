@@ -1,0 +1,55 @@
+#bodys-phone{
+	width: 100%;
+	overflow: hidden;
+}
+
+.body-phone{
+	width: 100%;
+	position: relative;
+	overflow:hidden;
+}
+.body-phone img{
+	width: 100%;
+}
+.body-phone p{
+	position: absolute;
+	left: 18rem;
+	font-size: 4rem;
+}
+
+.body-phone font{
+	font-size: 2rem;
+	position: absolute;
+	left: 14rem;
+	top: 5rem;
+	color: #555;
+}
+
+
+#foot-panl{
+	width: 100%;
+	height: 6rem;
+	background-color: rgb(55,55,55);
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	z-index: 999;
+}
+#foot-panl a{
+	float: right;
+	width: 6rem;
+	height: 6rem;
+	margin: 0 1rem;
+}
+
+#foot-panl span{
+	width: 40rem;
+    display: inline-block;
+    text-align: center;
+    border-right: 1px solid #666;
+}
+
+#foot-panl img{
+	filter:brightness(0.8);
+	height: 100%;
+}

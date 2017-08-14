@@ -1,0 +1,151 @@
+	<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="./css/main.css">
+</head>
+<body>
+	<div class="head" style="height: 0rem;" onmouseover="stopauto()" onmouseout="autoImg()">
+		<nav id="nav" >
+			<div class="nav width">
+				<ul class="menu">
+					<li style="padding: 0 0;">
+						<a href="#"><img style="height:4rem;" src="./imgs/logo_2.gif"></a>
+					</li>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">解决方案</a>
+						<div class="menu-2">
+							<ul class="list">
+								<h3>外勤管理</h3>
+								<li><a href="#">考勤协作</a></li>
+								<li><a href="#">外勤行为管理</a></li>
+							</ul>
+							<ul class="list">
+								<h3>外勤管理</h3>
+								<li><a href="#">考勤协作</a></li>
+								<li><a href="#">外勤行为管理</a></li>
+							</ul>
+							<ul class="list">
+								<h3>外勤管理</h3>
+								<li><a href="#">考勤协作</a></li>
+								<li><a href="#">外勤行为管理</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">产品定价</a></li>
+					<li><a href="#">AI开放平台</a></li>
+					<li><a href="#">品牌</a></li>
+					<li><a href="#">加盟</a></li>
+					<li><a href="#">365商学院</a></li>
+					<li><a href="#">关于我们</a></li>
+				</ul>
+				<ul class="auth">
+					<li id="login-li" onclick="document.getElementById('login-div').style.display='block';$('body').addClass('hide');">登录</li>
+					<li id="reg-li">注册</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+	
+	<div class="foot fallwidth">
+		<div class="foot-list width">
+			<ul class="list">
+				<h3 >外勤管理</h3>
+					<li><a href="#">考勤协作</a></li>
+					<li><a href="#">外勤行为管理</a></li>
+				</ul>
+				<ul class="list">
+					<h3>外勤管理</h3>
+					<li><a href="#">考勤协作</a></li>
+					<li><a href="#">外勤行为管理</a></li>
+				</ul>
+				<ul class="list">
+					<h3>外勤管理</h3>
+					<li><a href="#">考勤协作</a></li>
+					<li><a href="#">外勤行为管理</a></li>
+				</ul>
+				<div>
+					<span>联系我们：4000284866  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp关于我们：<img onmouseover="document.getElementById('codejpg').style.display='block';" onmouseout="document.getElementById('codejpg').style.display='none';" style="height: 30px;" src="./imgs/weixin.png"></span>
+					<img id="codejpg" style="position: absolute;	right: 30rem;display: none;" src="./imgs/code.jpg">
+				</div>
+		</div>
+	</div>
+	<div class="endbody">
+		<div class="width">
+			<img style="float: left;margin-left: 12rem;	" src="./imgs/logo_2.gif">	<p style="margin:0 20px;float: right;font-size: 1.2rem;margin-top: 20px;color: #fff;">备案许可证：蜀ICP备11016982号-3 Copyright © 2015 成都顺治网络科技公司 访问总量:  今日访问量:  </p>
+
+		</div>
+	</div>
+	<div class="float-right">
+		<div style="background-color: #eee;">
+		<img src="./imgs/qq.png" style="width: 100%;height: 100%;">
+			<div class="float-right-child">
+				<a href="#">QQ在线咨询</a>
+				<h2 >Tel:4000284866</h2>
+			</div>
+		</div>
+		<div >
+			<tx>产品咨询</tx>
+			<div class="float-right-child">
+				<a href="#">QQ在线咨询</a>
+				<h2 >Tel:4000284866</h2>
+			</div>
+		</div>
+		<div>
+			<tx>技术支持</tx>
+			<div class="float-right-child">
+				<a href="#">QQ在线咨询</a>
+				<h2 >Tel:4000284866</h2>
+			</div>
+		</div>
+		<div style="background-color: #869;" onclick="gotoHtml('.head');">
+			<tx>回到顶部</tx>
+			
+		</div>
+	</div>
+	<div id="login-div">
+		<div id="login">
+			<div>
+			<ul>
+				<li class="login-active">
+					<m>管理平台</m>
+					<form class="login-form" action="#1" style="display: block;">
+						<input type="text" name="qydm" placeholder="您的企业代码">
+						<input type="text" name="username" placeholder="员工姓名/已认证手机">
+						<input type="password" name="password" placeholder="您的密码">
+					</form>
+				</li>
+				<li>
+					<m>管理平台</m>
+					<form class="login-form" action="#2" >
+						<input type="text" name="username" placeholder="用户名">
+						<input type="password" name="password" placeholder="密码">
+						<input type="password" name="password" placeholder="密码">
+					</form>
+				</li>
+				<li>
+					<m>管理平台</m>
+					<form class="login-form" action="#3" >
+						<input type="text" name="username" placeholder="用户名">
+						<input type="password" name="password" placeholder="密码">
+						<input type="password" name="password" placeholder="密码">
+					</form>
+				</li>
+			</ul>
+			<button class="exit" onclick="document.getElementById('login-div').style.display='none';$('body').removeClass('hide');">X</button>
+			</div>
+			<div class="login-foot">
+				<button onclick="$('.login-active form').submit();">登录</button>
+				<p><a href="#">还没账号？免费注册</a></p>
+				<p><a href="#">找回超级用户密码</a></p>
+				<div class="login-foot-change">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+</body>
